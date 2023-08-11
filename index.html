@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Sofia</title>
+    <script type="text/javascript" src="js/game.js"></script>
+  </head>
+  <body>
+    <div>
+      <button id="startGameButtonEasy" >Easy Game</button>
+      <script>
+        document.getElementById("startGameButtonEasy").onclick = function () {
+          startGame();
+          location.href = "easy_game.html";
+        };
+      </script>
+      <button id="startGameButtonNormal" >Normal Game</button>
+      <script>
+        document.getElementById("startGameButtonNormal").onclick = function () {
+          startGame();
+          location.href = "normal_game.html";
+        };
+      </script>
+      <button id="startGameButton1Life" >1 Life Game</button>
+      <script>
+        document.getElementById("startGameButton1Life").onclick = function () {
+          startGame();
+          location.href = "hard_game.html";
+        };
+      </script>
+      
+    </div>
+  </body>
+</html>
