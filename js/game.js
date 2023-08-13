@@ -170,7 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
     numberOfGuessed.textContent = getNumberOfDistrictsGuessed() + "/" + districts.length;
 
 
-
     const timer = document.getElementById("timer");
     let remainingTime = 60 * 20; // 20 minutes
 
