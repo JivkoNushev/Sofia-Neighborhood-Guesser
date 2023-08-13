@@ -111,9 +111,11 @@ function guessDistrictHard(name) {
     const districtToBeGuessed = document.getElementById("districtToBeGuessed");
     const district = getDistrict();
 
-    // Set the text content of the paragraph element
-    districtToBeGuessed.textContent = district;
-    numberOfGuessed.textContent = getNumberOfDistrictsGuessed() + "/" + districts.length;
+    if (district != null) {
+        // Set the text content of the paragraph element
+        districtToBeGuessed.textContent = district;
+        numberOfGuessed.textContent = getNumberOfDistrictsGuessed() + "/" + districts.length;
+    }
 }
 
 function guessDistrictEasy(name) {

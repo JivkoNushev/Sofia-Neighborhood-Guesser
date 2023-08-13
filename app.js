@@ -14,15 +14,15 @@ app.get('/css/game.css', (req, res) => {
   res.sendFile(__dirname + '/css/game.css')
 })
 
-app.get('easy_game.html', (req, res) => {
+app.get('/easy_game.html', (req, res) => {
   res.sendFile(__dirname + '/easy_game.html')
 })
 
-app.get('normal_game.html', (req, res) => {
+app.get('/normal_game.html', (req, res) => {
   res.sendFile(__dirname + '/normal_game.html')
 })
 
-app.get('hard_game.html', (req, res) => {
+app.get('/hard_game.html', (req, res) => {
   res.sendFile(__dirname + '/hard_game.html')
 })
 
