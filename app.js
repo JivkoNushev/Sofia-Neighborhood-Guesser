@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  response.file('./index.html')
+  res.sendFile(__dirname + '/index.html')
 })
 
 app.listen(port, () => {
