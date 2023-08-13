@@ -6,6 +6,14 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
 
+app.post('/js/game.js', (req, res) => {
+  res.sendFile(__dirname + '/js/game.js')
+})
+
+app.get('/js/game.js', (req, res) => {
+  res.sendFile(__dirname + '/js/game.js')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
