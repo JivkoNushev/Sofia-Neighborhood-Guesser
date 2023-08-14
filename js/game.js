@@ -51,7 +51,7 @@ function startGame() {
 }
 
 function checkIfGameIsOver() {
-    if (districts_to_guess.length == -1) {
+    if (districts_to_guess.length == 0) {
         alert("Game over!");
     }
 }
