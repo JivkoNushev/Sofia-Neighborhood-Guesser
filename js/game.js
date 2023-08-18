@@ -101,6 +101,7 @@ function guessDistrictHard(name) {
         districts_to_guess.shift();
         checkIfGameIsOver();
     } else if (districts_to_guess.includes(name)){
+        document.getElementById(districts_to_guess[0]).style.fill = "#000055";
         clickedDistrict.style.fill = "red";
         districts_to_guess.length = 0;
         alert("Game over!");
