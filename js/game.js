@@ -72,7 +72,7 @@ function guessDistrictNormal(name) {
         districts_to_guess.shift();
         checkIfGameIsOver();
     } else if (districts_to_guess.includes(name)){
-        clickedDistrict.style.fill = "red";
+        // clickedDistrict.style.fill = "red";
     }
 
     localStorage.setItem("districts_to_guess", JSON.stringify(districts_to_guess));
@@ -102,7 +102,7 @@ function guessDistrictHard(name) {
         checkIfGameIsOver();
     } else if (districts_to_guess.includes(name)){
         document.getElementById(districts_to_guess[0]).style.fill = "#000055";
-        clickedDistrict.style.fill = "red";
+        // clickedDistrict.style.fill = "red";
         districts_to_guess.length = 0;
         alert("Game over!");
     }
@@ -138,7 +138,7 @@ function guessDistrictEasy(name) {
         districts_to_guess.shift();
         checkIfGameIsOver();
     } else if (districts_to_guess.includes(name)){
-        clickedDistrict.style.fill = "red";
+        // clickedDistrict.style.fill = "red";
         wrong_guesses += 1;
         if (wrong_guesses == 3) {
             localStorage.setItem("correct_guesses", JSON.stringify(corr_guesses + 1));
