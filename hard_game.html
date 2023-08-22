@@ -9,7 +9,13 @@
     <body>
         <div id="districtToGuess" class="districtToGuess">
             <p>Guess the district</p>
-            <p id="districtToBeGuessed"></p>            
+            <button id="skipDistict" onclick="skipDistrict()">Skip</button>
+            <script>
+                document.getElementById("skipDistict").onclick = function () {
+                    skipDistrict();
+                };
+            </script>     
+            <p id="districtToBeGuessed" style="display:inline-block"></p>       
         </div>
         <div>
             <button id="restartGameButton" >Restart Game</button>
@@ -25,14 +31,6 @@
             <script>
                 document.getElementById("endGameButton").onclick = function () {
                     location.href = "/";
-                };
-            </script>
-        </div>
-        <div>
-            <button id="skipDistict" onclick="skipDistrict()">Skip</button>
-            <script>
-                document.getElementById("skipDistict").onclick = function () {
-                    skipDistrict
                 };
             </script>
         </div>
