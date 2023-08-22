@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000
+const port = 3000
+
+app.get('/index.html', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+})
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
@@ -29,3 +33,8 @@ app.get('/hard_game.html', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+app.use((req, res, next) => {
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  next();
+});

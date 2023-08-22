@@ -56,8 +56,6 @@ function getNumberOfDistrictsGuessed() {
 
 function startGame() {
     districts_to_guess = shuffleArray(districts);
-    // districts_to_guess = districts.slice(0,2);
-    districts_to_guess[0] = "в.з.Бункера 🚲";
     localStorage.setItem("districts_to_guess", JSON.stringify(districts_to_guess));
     localStorage.setItem("wrong_guesses", JSON.stringify(wrong_guesses));
     localStorage.setItem("correct_guesses", JSON.stringify(correct_guesses));
