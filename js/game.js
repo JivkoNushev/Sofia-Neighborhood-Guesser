@@ -65,7 +65,7 @@ function startGame() {
 
 function checkIfGameIsOver() {
     if (districts_to_guess.length == 0) {
-        alert("Game over!");
+        alert("You win!");
     }
 }
 
