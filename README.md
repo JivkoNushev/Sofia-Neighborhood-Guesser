@@ -4,7 +4,5 @@
 
 # Run with easter eggs locally
 
-```
-  node app.js
-```
+open index.html file in any browser
 
