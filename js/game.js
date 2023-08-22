@@ -121,7 +121,7 @@ function guessDistrictHard(name) {
         clickedDistrict.style.fill = "#00FF55";
         districts_to_guess.shift();
         if (districts_to_guess.length == 0) {
-            if(window.confirm("VALHALLA DELIVERENCE")){
+            if(window.confirm("SHALL WE DARE THE DRAGON?")){
                 window.open("https://www.youtube.com/watch?v=SVg8eP7KPNQ");
             }
         }
