@@ -51,6 +51,12 @@ function skipDistrict() {
 }
 
 function getNumberOfDistrictsGuessed() {
+    let districts = JSON.parse(localStorage.getItem("districts_to_guess"));
+    if (localStorage.getItem("correct_guesses") == districts.length / 2) {
+        document.body.style.backgroundColor = "orange";
+        console.log("orange");
+    }
+    
     return JSON.parse(localStorage.getItem("correct_guesses"));
 }
 
