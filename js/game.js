@@ -61,6 +61,10 @@ function startGame() {
     localStorage.setItem("wrong_guesses", JSON.stringify(wrong_guesses));
     localStorage.setItem("correct_guesses", JSON.stringify(correct_guesses));
     console.log(districts_to_guess);
+    var url = "https://www.youtube.com/watch?v=CZ_VFJn2kJM";
+    if(window.confirm("VALHALLA DELIVERENCE")){
+        window.open(url);
+     }
 }
 
 function checkIfGameIsOver() {
@@ -112,7 +116,9 @@ function guessDistrictHard(name) {
         localStorage.setItem("correct_guesses", JSON.stringify(corr_guesses + 1));
         clickedDistrict.style.fill = "#00FF55";
         districts_to_guess.shift();
-        checkIfGameIsOver();
+        if (districts_to_guess.length == 0) {
+            alert("VALHALLA DELIVERENCE");
+        }
     } else if (districts_to_guess.includes(name)){
         document.getElementById(districts_to_guess[0]).style.fill = "#000055";
         // clickedDistrict.style.fill = "red";
