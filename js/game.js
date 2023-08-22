@@ -37,6 +37,19 @@ function getDistrict() {
     return shuffledDistricts[0];
 }
 
+function skipDistrict() {
+    let shuffledDistricts = JSON.parse(localStorage.getItem("districts_to_guess"));
+    shuffledDistricts.push(shuffledDistricts[0]);
+    shuffledDistricts.shift();
+    localStorage.setItem("districts_to_guess", JSON.stringify(shuffledDistricts));
+    console.log(shuffledDistricts[0]);
+
+    const districtToBeGuessed = document.getElementById("districtToBeGuessed");
+
+    // Set the text content of the paragraph element
+    districtToBeGuessed.textContent = shuffledDistricts[0];
+}
+
 function getNumberOfDistrictsGuessed() {
     return JSON.parse(localStorage.getItem("correct_guesses"));
 }
