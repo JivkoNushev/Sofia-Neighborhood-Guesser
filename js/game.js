@@ -115,10 +115,14 @@ function guessDistrictHard(name) {
     console.log(name);
     if (name == districts_to_guess[0]) {
         if (districts_to_guess[0] == "в.з.Бункера 🚲") {
-            var myMusic= document.getElementById("music");
+            var myMusic= document.getElementById("music1");
             myMusic.volume = 0.5;
             myMusic.play();
-            console.log("music");
+        }
+        if (districts_to_guess[0] == "м-т Камбаните") {
+            var myMusic= document.getElementById("music2");
+            myMusic.volume = 0.5;
+            myMusic.play();
         }
         console.log("music");
         localStorage.setItem("correct_guesses", JSON.stringify(corr_guesses + 1));
