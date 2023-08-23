@@ -6,3 +6,6 @@
 
 open index.html file in any browser
 
+
+*easter eggs by Boris Bachev*
+
