@@ -7,5 +7,5 @@
 open index.html file in any browser
 
 
-*Easter eggs by Boris Bachev*
-
+*QA & Easter eggs - Boris Bachev*
+  
